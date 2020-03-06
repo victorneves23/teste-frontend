@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>O POVO ONLINE | Portal de Notícias sobre o Ceará, Brasil e Mundo</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -15,14 +16,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-					<nav class="navbar navbar-expand-lg navbar-light bg-default nav-menu">
+					<nav class="navbar navbar-expand-lg navbar-light bg-default">
 						<a class="navbar-brand" href="http://www.opovo.com.br/"><img alt="logo-opovo" src="imagens/o-povo-online.png" width="180" height="27"></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
 
-						<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-							<ul class="navbar-nav mr-auto menu-header">
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto">
 								<li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
 								<li class="nav-item"><a class="nav-link" href="#">Vídeo</a></li>
 								<li class="nav-item"><a class="nav-link" href="#">Propósito</a></li>
@@ -43,7 +44,7 @@
 		<div class="row">
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 				<div class="row">	
-					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
 						<div class="conteudo-completo-esquerdo">
 							<div class="detalhes-vaga">
 								<a href="#" class="botao-voltar">&larr;Voltar</a>
@@ -95,58 +96,65 @@
 											<h1>Envie seu currículo</h1>
 										</div>
 
-										<div class="campo-maior">
-											<label>Nome</label>
-											<input type="text" name="nome" required>
+										<div class="form-row">
+											<div class="form-group col-md-12 campo-maior">
+												<label>Nome</label>
+												<input type="text" class="form-control" name="nome" required>
+											</div>
+											<div class="form-group col-md-12 campo-maior">
+												<label>E-mail</label>
+												<input type="email" class="form-control" name="email" required>
+											</div>
+											<div class="form-group col-md-12 campo-maior">
+												<label>Cep</label>
+												<input type="number" class="form-control" name="cep" id="txtCep" required>
+											</div>
+											<div class="form-group col-md-12 campo-maior">
+												<label>Endereço</label>
+												<input type="text" class="form-control" name="endereco" id="txtRua" required>
+											</div>
 										</div>
-										<div class="campo-maior">
-											<label>E-mail</label>
-											<input type="email" name="email" required>
+										<div class="form-row">
+											<div class="form-group col-md-4 campo-esquerdo">
+												<label>Número</label>
+												<input type="number" class="form-control" name="numero" id="txtComplemento" required>
+											</div>
+											<div class="form-group col-md-8 campo-direito">
+												<label>Bairro</label>
+												<input type="text" class="form-control" name="bairro" id="txtBairro" required>
+											</div>
 										</div>
-										<div class="campo-maior">
-											<label>Cep</label>
-											<input type="number" name="cep" id="txtCep" required>
-										</div>
-										<div class="campo-maior">
-											<label>Endereço</label>
-											<input type="text" name="endereco" id="txtRua" required>
-										</div>
-										<div class="campo-esquerdo">
-											<label>Número</label><br>
-											<input type="number" name="numero" id="txtComplemento" required>
-										</div>
-										<div class="campo-direito">
-											<label>Bairro</label>
-											<input type="text" name="bairro" id="txtBairro" required>
-										</div>
-										<div class="campo-esquerdo">
-											<label>Cidade</label><br>
-											<input type="text" name="cidade" id="txtCidade" required>
-										</div>
-										<div class="campo-direito">
-											<label>Estado</label>
-											<input type="text" name="estado" id="txtEstado" required>
-										</div>
-										<div class="campo-curriculo">
-											<label>
-												Currículo
-											</label><br>
-											<input type="submit" name="curriculo" value="Anexar currículo">
-
-											<p>Todos os campos são obrigatórios</p>
-											<p>Tamanho máximo para upload - 10mb</p>
-											<p>Tipo do arquivo: .pdf ou .doc</p>
+										<div class="form-row">
+											<div class="form-group col-md-4 campo-esquerdo">
+												<label>Cidade</label>
+												<input type="text" class="form-control" name="cidade" id="txtCidade" required>
+											</div>
+											<div class="form-group col-md-8 campo-direito">
+												<label>Estado</label>
+												<input type="text" class="form-control" name="estado" id="txtEstado" required>
+											</div>
+											<div class="campo-curriculo">
+												
+													<h4>
+														Currículo
+													</h4>
+													<input type="submit" name="curriculo" value="Anexar currículo">
+												
+													<p>Todos os campos são obrigatórios</p>
+													<p>Tamanho máximo para upload - 10mb</p>
+													<p>Tipo do arquivo: .pdf ou .doc</p>
+												
+											</div>
 										</div>
 									</div>
 
 									<input type="submit" name="enviar-curriculo" value="Enviar currículo" class="botao-enviar">
 								</form>
-
 							</div>
 						</div>
 					</div>
 
-					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+					<div class="col-xl-6 col-lg-6 col-md col-sm">
 						<div class="conteudo-completo-direito">
 							<div class="barra-flutuante">				
 								<div class="imagem-flutuante">
@@ -155,7 +163,6 @@
 							</div>
 						</div>	
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -172,13 +179,11 @@
 				<div class="row">
 					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 						<div class="row">
-							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
 								<img alt="logo-opovo" src="imagens/o-povo-online.png" width="131" height="19">
 							</div>
 
-							<div class="col-xl col-lg col-md col-sm"></div>
-
-							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
 								<label>Copyright© 1997-2016</label>
 							</div>
 						</div>
