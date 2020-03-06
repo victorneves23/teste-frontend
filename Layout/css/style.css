@@ -70,7 +70,6 @@ label{
 
 .formulario{
 	height: 886px;
-	width: 490px;
 	background-color: #e8f8ff;
 	padding: 15px;
 }
@@ -78,8 +77,7 @@ label{
 .campos-formulario{
 	border: 1px solid #314163;
 	padding: 0 15px;
-    height: 766px;
-    width: 457px;
+	height: 766px;
 }
 
 .campos-formulario h1{
@@ -93,8 +91,12 @@ label{
 	font-size: 22px;
 }
 
-.campo-curriculo label{
+.campo-curriculo h4{
 	margin-top: 45px;
+	width: 75px;
+	height: 30px;
+	font-family: Oswald Regular;
+	font-size: 22px;
 }
 
 .campo-curriculo input{
@@ -103,7 +105,6 @@ label{
 	background-color: #4A85AF;
 	color: #ffffff;
 	height: 40px;
-	width: 165px;
 	border: 1px solid;
 	margin-top: 12px;
 	margin-bottom: 42px;
@@ -112,7 +113,7 @@ label{
 
 .campo-curriculo p{
 	font-family: Oswald Light;
-	font-size: 14px;
+	/*font-size: 14px;*/
 	margin-left: 10px;
 	margin-bottom: 0;
 	float: left;
@@ -120,26 +121,22 @@ label{
 
 .campo-maior input{
 	height: 33px;
-	width: 422px;
 	background: #e8f8ff;
 	margin: 10px 0;
 	border: 1px solid #314163;
 	border-radius: 5px;
 }
-/**/
 
 .campo-esquerdo{
 	float: left;
-	margin-right: 15px;
+	/*margin-right: 15px;*/
 }
 
 .campo-direito{
 	float: left;
-	width: 234px;
 }
 
 .campo-esquerdo input{
-	width: 173px;
 	height: 33px;
 	margin: 10px 0;
 	background-color: #e7f8ff;
@@ -148,15 +145,12 @@ label{
 }
 
 .campo-direito input{
-	width: 234px;
 	height: 33px;
 	margin: 10px 0;
 	background-color: #e7f8ff;
 	border: 1px solid #314163;
 	border-radius: 5px;
 }
-/**/
-
 
 .botao-enviar{
 	font-family: Oswald Regular;
@@ -168,10 +162,6 @@ label{
 	border: 1px solid;
 	float: right;
 	margin: 33px 0;
-}
-
-.espaco-centro{
-	width: 160px;
 }
 
 .conteudo-completo-direito{
@@ -208,22 +198,168 @@ label{
 	float: right;
 }
 
-@media screen and (max-width: 768px) {
-  .conteudo-completo-direito{
-  	display: none;
-  }
-
-  .campo-esquerdo{
-
-  }
+@media screen and (max-width: 210px){
+	.conteudo-completo-direito{
+		display: none;
+	}
 }
 
-@media screen and (max-width: 992px) {
-  .barra-flutuante{
-    display: none;
-  }
+@media screen and (max-width: 268px) and (min-width: 211px){
+	.conteudo-completo-direito{
+		display: none;
+	}
 
-  .imagem-flutuante img{
-    display: none;
-  }
+	.campos-formulario{
+		height: 1276px;
+	}
+
+	.formulario{
+		height: 1399px;
+	}
+}
+
+@media screen and (max-width: 376px) and (min-width: 269px){
+	.conteudo-completo-direito{
+		display: none;
+	}
+
+	.campos-formulario{
+		height: 1222px;
+	}
+
+	.formulario{
+		height: 1345px;
+	}
+}
+
+@media screen and (max-width: 388px) and (min-width: 377px){
+	.conteudo-completo-direito{
+		display: none;
+	}
+
+	.campo-curriculo p{
+		font-size: 12px;
+	}
+
+	.campos-formulario{
+		height: 1060px;
+	}
+
+	.formulario{
+		height: 1183px;
+	}
+}
+
+@media screen and (max-width: 402px) and (min-width: 389px){
+	.conteudo-completo-direito{
+		display: none;
+	}
+
+	.campo-curriculo p{
+		font-size: 13px;
+	}
+
+	.campos-formulario{
+		height: 1060px;
+	}
+
+	.formulario{
+		height: 1183px;
+	}
+}
+
+@media screen and (max-width: 406px) and (min-width: 402px){
+	.conteudo-completo-direito{
+		display: none;
+	}
+
+	.campo-curriculo p{
+		font-size: 14px;
+	}
+
+	.campos-formulario{
+		height: 1067px;
+	}
+
+	.formulario{
+		height: 1193px;
+	}
+}
+
+@media screen and (max-width: 426px) and (min-width: 407px){
+	.conteudo-completo-direito{
+		display: none;
+	}
+
+	.campo-curriculo p{
+		font-size: 14px;
+	}
+
+	.campos-formulario{
+		height: 1070px;
+	}
+
+	.formulario{
+		height: 1196px;
+	}
+}
+
+@media screen and (max-width: 767px) and (min-width: 427px){
+	.conteudo-completo-direito{
+		display: none;
+	}
+
+	.campos-formulario{
+		height: 1087px;
+	}
+
+	.formulario{
+		height: 1211px;
+	}
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+	.conteudo-completo-direito{
+		display: none;
+	}
+
+	.campo-curriculo p{
+		font-size: 22px;
+	}
+
+	.campos-formulario{
+		height: 905px;
+	}
+
+	.formulario{
+		height: 1030px;
+	}
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px){
+	.campos-formulario{
+		height: 873px;
+	}
+
+	.formulario{
+		height: 1000px;
+	}
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1200px){
+	.formulario{
+		height: 1035px;
+	}
+
+	.barra-flutuante{
+		height: 1736px;
+	}
+
+	.imagem-flutuante{
+		padding-top: 417px;
+	}
+
+	.campos-formulario{
+		height: 908px;
+	}
 }
